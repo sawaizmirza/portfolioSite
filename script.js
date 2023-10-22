@@ -8,4 +8,12 @@ document.addEventListener('DOMContentLoaded', () => {
             project.style.transform = 'scale(1)';
         });
     });
+
+    // Add this new code for the burger menu
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
 });
