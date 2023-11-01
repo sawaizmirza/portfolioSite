@@ -11,29 +11,30 @@
   <nav class="navbar">
       <div class="container">
           <div class="nav-wrapper">
-              <a href="#" class="logo">YourLogo</a>
-              <div class="nav-content">
-                  <ul class="nav-links">
-                      <li><a href="#home">Home</a></li>
-                      <li><a href="#projects">Projects</a></li>
-                      <li><a href="#about">About</a></li>
-                      <li><a href="#contact">Contact</a></li>
-                  </ul>
+              <div class="nav-left">
                   <button id="darkModeToggle" class="dark-mode-toggle">🌙</button>
-                  <button class="burger-menu" id="burgerMenu">☰</button>
               </div>
+              <ul class="nav-links">
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#projects">Projects</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#contact">Contact</a></li>
+              </ul>
+              <button class="burger-menu" id="burgerMenu">☰</button>
           </div>
       </div>
   </nav>
 
   <div class="container">
-      <header>
-          <h1>Sawaiz Mirza</h1>
-          <p class="tagline">Web3 Developer | Blockchain Enthusiast</p>
+      <div class="video-container">
           <video autoplay muted loop id="bgVideo">
-              <source src="path/to/your/video.mp4" type="video/mp4">
+              <source src="/Portfolio Site/media/heroVideo.mp4" type="video/mp4">
           </video>
-      </header>
+          <header class="overlay-header">
+              <h1>Sawaiz Mirza</h1>
+              <p class="tagline">Web3 Developer | Blockchain Enthusiast</p>
+          </header>
+      </div>
 
       <section id="home" class="hero">
           <div class="hero-content">
@@ -49,6 +50,9 @@
               <div class="project-info">
                   <h3 class="project-title">Project 1</h3>
                   <p class="project-description">A blockchain-based smart contract platform for automated and transparent supply chain management.</p>
+                  <button class="arrow-btn" data-project="project1">
+                      <span class="arrow">→</span>
+                  </button>
               </div>
           </div>
           <div class="project">
@@ -56,6 +60,9 @@
               <div class="project-info">
                   <h3 class="project-title">Project 2</h3>
                   <p class="project-description">A decentralized NFT marketplace empowering digital artists to mint, showcase, and trade their unique creations using blockchain technology.</p>
+                  <button class="arrow-btn" data-project="project1">
+                    <span class="arrow">→</span>
+                </button>
               </div>
           </div>
           <div class="project">
@@ -63,6 +70,9 @@
               <div class="project-info">
                   <h3 class="project-title">Project 3</h3>
                   <p class="project-description">A DeFi platform for decentralized lending and borrowing of crypto assets.</p>
+                  <button class="arrow-btn" data-project="project1">
+                    <span class="arrow">→</span>
+                </button>
               </div>
           </div>
       </section>

@@ -41,4 +41,22 @@ document.addEventListener('DOMContentLoaded', () => {
             darkModeToggle.textContent = '🌙';
         }
     });
+
+    // Project navigation functionality
+    const projectButtons = document.querySelectorAll('.project-btn');
+    projectButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
+            e.preventDefault();
+            const projectId = button.getAttribute('data-project');
+            navigateToProject(projectId);
+        });
+    });
+
+    function navigateToProject(projectId) {
+        // This is where you would implement the navigation logic
+        // For now, we'll just log the project ID
+        console.log(`Navigating to project: ${projectId}`);
+        // In a real implementation, you might do something like:
+        // window.location.href = `/projects/${projectId}`;
+    }
 });
