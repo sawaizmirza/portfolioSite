@@ -59,4 +59,14 @@ document.addEventListener('DOMContentLoaded', () => {
         // In a real implementation, you might do something like:
         // window.location.href = `/projects/${projectId}`;
     }
+
+    const video = document.getElementById('bgVideo');
+    
+    video.addEventListener('loadedmetadata', () => {
+        console.log('Video metadata loaded');
+    });
+
+    video.addEventListener('error', (e) => {
+        console.error('Error loading video:', e);
+    });
 });
